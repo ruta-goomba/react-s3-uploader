@@ -90,7 +90,7 @@ function S3Router(options, middleware) {
         var params = {
             Bucket: S3_BUCKET,
             Key: fileKey,
-            Expires: 60,
+            Expires: 120,
             ContentType: mimeType,
             ACL: options.ACL || 'private'
         };
